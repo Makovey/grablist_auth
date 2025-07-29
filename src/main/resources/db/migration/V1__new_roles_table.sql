@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS grablist_roles(
    id SERIAL PRIMARY KEY,
    name VARCHAR(50) UNIQUE NOT NULL,
-   description TEXT,
+   description VARCHAR(100),
    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 

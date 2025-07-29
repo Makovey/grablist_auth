@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS grablist_users(
     last_name VARCHAR(50) NOT NULL,
     phone VARCHAR(30) NOT NULL,
     password_hash VARCHAR(255) NOT NULL,
-    role_id INTEGER REFERENCES grablist_roles(id),
+    role_id INTEGER REFERENCES grablist_roles(id) NOT NULL,
     is_active BOOLEAN DEFAULT TRUE NOT NULL,
     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP NOT NULL,
     last_login_at TIMESTAMP WITH TIME ZONE,
